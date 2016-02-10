@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load staticfiles%}
+
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	  <title>Almabase - Smart News Scraper</title>
+
+	  <!-- CSS HERE -->
+
+	</head>
+
+
+	<body>
+		<h1>NIT WARANGAL</h1>
+		<h3>Select by Date and Time :</h3>
+		{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+		<form action="submit" method="post">
+		  <select name = "url">
+		  <option value="1">BBC</option>
+		  <option value="2">TECHCRUNCH</option>
+		  <option value="3">YOURSTORY</option>
+		  <option value="4" selected>ET</option>
+		</select> 
+		{% csrf_token %}
+		<input type ="date" value = "date"/>
+		<input type="submit" value="View Articles" />
+		</form>
+		<br>
+		<h3>OR :</h3>
+		<a href="#" class="btn">See All Articles</a>
+
+<!--  JAVASCRIPT HERE-->
+
+	</body>
+</html>
