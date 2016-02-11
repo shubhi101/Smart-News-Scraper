@@ -12,7 +12,6 @@ class Article(models.Model):
 	content=models.TextField
 	pubdate=models.DateTimeField(auto_now=False)
 	added_on=models.DateTimeField(auto_now=True)
-	author=models.CharField(max_length=60)
 	tags=models.CharField(max_length=180,blank=True) #for now, just deserialize the array and store
 	sentiment=models.BooleanField #true=positive false=negative
 
@@ -59,7 +58,7 @@ class RelatedOrganizations(models.Model):
 		return self.organization.name
 
 #Synonyms used for the name of the college.
-class Synonyms(models.Model):
+class Synonym(models.Model):
 	synonym=models.CharField(max_length=300)
 	def __unicode__(self):
 		return self.synonym
