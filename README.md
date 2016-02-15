@@ -1,5 +1,5 @@
 # Smart-News-Scraper
-Application written in Python-Django to fetch news from RSS feeds and predict if a news article is relevant to the alumni of a particular college. Uses NLTK's Naive Bayes, Text Classification and Sentiment Ananlysis tests.
+Application written in Python-Django to fetch news from RSS feeds and predict if a news article is relevant to the alumni of NIT Warangal. Uses NLTK's Naive Bayes, Text Classification and Sentiment Ananlysis tests.
 
 ## Libraries Used:
 1. Beautiful Soup 4
